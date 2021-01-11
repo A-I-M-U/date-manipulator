@@ -27,6 +27,6 @@
   ],
   "repository": "git://github.com/A-I-M-U/date-manipulator.git",
   "publishConfig": {
-     "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/A-I-M-U"
   }
 }
