@@ -52,7 +52,7 @@ var d = dateM();
 // dd - date, mm - month, yyyy - year.
 // Don't use spaces between time values requesting string.
 // hh:mm:ss - OK
-// hh mm ss - Warning: You'll may don't get what you expect.
+// hh mm ss - Warning: You may don't get what you expect.
 
 // Example:
 d.current("dd-mm-yyyy hh:mm:ss") // Prints current date and time.
