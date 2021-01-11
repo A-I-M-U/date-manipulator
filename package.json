@@ -1,0 +1,32 @@
+{
+  "name": "@A-I-M-U/date-manipulator",
+  "version": "0.1.0",
+  "main": "dist/date-manipulator.js",
+  "unpkg": "dist/date-manipulator.min.js",
+  "module": "dist/date-manipulator.esm.js",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.29.0",
+    "rollup-plugin-banner": "^0.2.1",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "author": "A-I-M-U",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "repository": "git://github.com/A-I-M-U/date-manipulator.git"
+  "publishConfig": {
+     "registry":"https://npm.pkg.github.com"
+  }
+}
