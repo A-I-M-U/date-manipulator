@@ -7,13 +7,13 @@ This is a simple date and time manipulator. Using this package you can get some 
 ### Install this package via npm:
 
 ```bash
-npm install Date-manipulator
+npm install @aimu/date-manipulator
 ```
 
 This package is also available on unpkg, so you can load it via script tag:
 
 ```html
-<script src="path/to/date-manipulator.min.js"></script>
+<script src="https://unpkg.com/@aimu/date-manipulator"></script>
 <script>
     // You can use library features here.
 </script>
