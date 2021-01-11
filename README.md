@@ -1,5 +1,9 @@
 # Date-manipulator
 
+![npm](https://img.shields.io/npm/v/@aimu/date-manipulator?color=blue&style=plastic)
+![npm bundle size](https://img.shields.io/bundlephobia/min/@aimu/date-manipulator?style=plastic)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=plastic)](http://makeapullrequest.com)
+
 This is a simple date and time manipulator. Using this package you can get some helpful features like finding difference between dates, and getting current date and time by passing a string. More features are being developed by our team.
 
 ## 📦 Installation
@@ -92,6 +96,10 @@ Here are instructions for contributing.
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request.
+
+**Working on your first Pull Request?**
+
+ You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://kcd.im/pull-request)
 
 ## ⚖️ License
 
