@@ -25,7 +25,7 @@ This package is also available on unpkg, so you can load it via script tag:
 
 You can any valid arguments of Date() built-in javascript object.
 
-You can also pass options as object, right there's only one option available: *hFormat: 12 or 24 as string value (It's 24 by default)*.
+You can also pass options as object, right now, there's only one option available: *hFormat: 12 or 24 as string value (It's 24 by default)*.
 
 *Example:*
 
