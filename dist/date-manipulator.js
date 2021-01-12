@@ -1,8 +1,8 @@
-// A-I-M-U/date-manipulator v0.1.0 license: MIT
+// A-I-M-U/date-manipulator v0.1.1 license: MIT
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.dateM = factory());
+  (global = global || self, global.dateM = factory());
 }(this, (function () { 'use strict';
 
   function _typeof(obj) {

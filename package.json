@@ -1,6 +1,7 @@
 {
   "name": "@aimu/date-manipulator",
   "version": "0.1.1",
+  "description": "Built for solving date and time manipulation problems.",
   "main": "dist/date-manipulator.js",
   "unpkg": "dist/date-manipulator.min.js",
   "module": "dist/date-manipulator.esm.js",
