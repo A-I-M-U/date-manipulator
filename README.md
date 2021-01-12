@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/@aimu/date-manipulator?color=blue&style=plastic)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@aimu/date-manipulator?style=plastic)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=plastic)](http://makeapullrequest.com)
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FA-I-M-U%2Fdate-manipulator%2Fbadge%3Fref%3Dmain&style=plastic)](https://actions-badge.atrox.dev/A-I-M-U/date-manipulator/goto?ref=main)
+![Node.js CI](https://github.com/A-I-M-U/date-manipulator/workflows/Node.js%20CI/badge.svg?branch=main)
 
 This is a simple date and time manipulator. Using this package you can get some helpful features like finding difference between dates, and getting current date and time by passing a string. More features are being developed by our team.
 
