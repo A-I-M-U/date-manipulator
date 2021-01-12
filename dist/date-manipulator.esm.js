@@ -129,13 +129,16 @@ function timePassed(begin, end) {
 
 function current(arg) {
   var _this = this,
-      _getTime;
+      _getTime2;
 
   arg.trim();
   arg = arg.toLowerCase();
   var date;
 
   if (/:/.test(arg) && /(dd)|(mm)|(yyyy)/.test(arg)) {
+    var _getTime;
+
+    if (!/\s/.test(arg)) return (_getTime = getTime(arg, this.hFormat, this.date)) !== null && _getTime !== void 0 ? _getTime : arg;
     date = arg.slice(0, arg.lastIndexOf(' '));
     arg = arg.slice(arg.lastIndexOf(' '), arg.length);
   } else {
@@ -156,7 +159,7 @@ function current(arg) {
       return _this.date.getFullYear();
     }
   });
-  arg = date + ((_getTime = getTime(arg, this.hFormat, this.date)) !== null && _getTime !== void 0 ? _getTime : '');
+  arg = date + ((_getTime2 = getTime(arg, this.hFormat, this.date)) !== null && _getTime2 !== void 0 ? _getTime2 : '');
   return arg;
 }
 

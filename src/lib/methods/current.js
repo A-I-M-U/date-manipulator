@@ -6,6 +6,7 @@ export function current(arg) {
   let date;
 
   if (/:/.test(arg) && /(dd)|(mm)|(yyyy)/.test(arg)) {
+    if(!/\s/.test(arg)) return getTime(arg, this.hFormat, this.date) ?? arg;
     date = arg.slice(0, arg.lastIndexOf(' '));
     arg = arg.slice(arg.lastIndexOf(' '), arg.length);
   } else {
