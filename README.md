@@ -48,16 +48,20 @@ console.log(d.current("dd-mm-yyyy hh:mm")); // Prints current date and time form
 This method returns a string replaced by a requested values.
 
 ```js
-var d = dateM();
+var d = new dateM();
 
 // dd - date, mm - month, yyyy - year.
-// Don't use spaces between time values requesting string.
+// Note: time representing characters must be separated by colon(:).
 // hh:mm:ss - OK
 // hh mm ss - Warning: You may don't get what you expect.
 
 // Example:
 d.current("dd-mm-yyyy hh:mm:ss") // Prints current date and time.
 ```
+
+#### dateM().unixTime()
+
+This method returns unix time in seconds.
 
 #### dateM.timePassed()
 

@@ -1,3 +1,3 @@
-export function getUTC() {
+export function unixTime() {
   return this.date.getTime();
 }

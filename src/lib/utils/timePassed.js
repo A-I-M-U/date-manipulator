@@ -1,5 +1,6 @@
 export function timePassed(begin, end) {
-  if ('function' !== typeof begin.getUTC || 'function' !== typeof end.getUTC)
-    return null;
-  return (end.getUTC() - begin.getUTC()) / 1000 / 60 / 60 / 24;
+  if('object' !== typeof begin || 'object' !== typeof end) return 0;
+  if ('function' !== typeof begin.unixTime || 'function' !== typeof end.unixTime)
+    return 0;
+  return (end.unixTime() - begin.unixTime()) / 1000 / 60 / 60 / 24;
 }

@@ -18,9 +18,10 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "node test/test.js",
+    "test": "node test/main.test.js",
     "pretest": "npm run build"
   },
+  "keywords": ["date", "time", "manipulation"],
   "author": "A-I-M-U",
   "license": "MIT",
   "files": [

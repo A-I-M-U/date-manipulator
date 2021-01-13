@@ -123,8 +123,9 @@ function getTime(str, format, date) {
 }
 
 function timePassed(begin, end) {
-  if ('function' !== typeof begin.getUTC || 'function' !== typeof end.getUTC) return null;
-  return (end.getUTC() - begin.getUTC()) / 1000 / 60 / 60 / 24;
+  if ('object' !== _typeof(begin) || 'object' !== _typeof(end)) return 0;
+  if ('function' !== typeof begin.unixTime || 'function' !== typeof end.unixTime) return 0;
+  return (end.unixTime() - begin.unixTime()) / 1000 / 60 / 60 / 24;
 }
 
 function current(arg) {
@@ -163,14 +164,13 @@ function current(arg) {
   return arg;
 }
 
-function getUTC() {
+function unixTime() {
   return this.date.getTime();
 }
 
 function dateM() {
   var args = Array.from(arguments);
   var opt = args.pop();
-  if ('number' === typeof args[1]) args[1] = args[1] - 1;
   this.hFormat = 'object' === _typeof(opt) ? opt.hFormat : '24';
 
   if ('object' === _typeof(opt) && args.length > 1) {
@@ -182,7 +182,7 @@ function dateM() {
   }
 }
 dateM.prototype.current = current;
-dateM.prototype.getUTC = getUTC;
+dateM.prototype.unixTime = unixTime;
 
 var date_m = function date_m() {
   return _construct(dateM, Array.prototype.slice.call(arguments));
