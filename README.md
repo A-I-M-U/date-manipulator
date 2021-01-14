@@ -85,7 +85,7 @@ console.log(dateM.timePassed(b, e)); // Prints 366
 - [ ] Adding timezone option.
 - [ ] Validation of arguments.
 - [ ] Error handling.
-- [ ] String values for day and month.
+- [x] String values for day and month.
 - [ ] Creating a meaningful and helpful documentation.
 - [ ] Adding some options for timePassed method.
 - [ ] Adding some more features.
