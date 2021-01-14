@@ -1,4 +1,4 @@
-import { matchDate, getTime } from '../utils/index.js';
+import { matchDate, getTime, data } from '../utils/index.js';
 
 export function current(arg) {
   arg.trim();
@@ -6,7 +6,7 @@ export function current(arg) {
   let date;
 
   if (/:/.test(arg) && /(dd)|(mm)|(yyyy)/.test(arg)) {
-    if(!/\s/.test(arg)) return getTime(arg, this.hFormat, this.date) ?? arg;
+    if (!/\s/.test(arg)) return getTime(arg, this.hFormat, this.date) ?? arg;
     date = arg.slice(0, arg.lastIndexOf(' '));
     arg = arg.slice(arg.lastIndexOf(' '), arg.length);
   } else {
@@ -23,6 +23,12 @@ export function current(arg) {
     }
     if (m == 'yyyy') {
       return this.date.getFullYear();
+    }
+    if (m == 'day') {
+      return data.days[this.date.getDay()];
+    }
+    if (m == 'month') {
+      return data.months[this.date.getMonth()];
     }
   });
   arg = date + (getTime(arg, this.hFormat, this.date) ?? '');

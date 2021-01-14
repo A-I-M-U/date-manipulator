@@ -20,7 +20,7 @@ This package is also available on unpkg, so you can load it via script tag:
 ```html
 <script src="https://unpkg.com/@aimu/date-manipulator"></script>
 <script>
-    // You can use library features here.
+  // You can use library features here.
 </script>
 ```
 
@@ -30,15 +30,15 @@ This package is also available on unpkg, so you can load it via script tag:
 
 You can pass any valid arguments of Date() built-in javascript object.
 
-You can also pass options as object, right now, there's only one option available: *hFormat: 12 or 24 as string value (It's 24 by default)*.
+You can also pass options as object, right now, there's only one option available: _hFormat: 12 or 24 as string value (It's 24 by default)_.
 
-*Example:*
+_Example:_
 
 ```js
 var d = new dateM({
-    hFormat: '12'
+  hFormat: '12',
 });
-console.log(d.current("dd-mm-yyyy hh:mm")); // Prints current date and time format in 12 hours.
+console.log(d.current('dd-mm-yyyy hh:mm')); // Prints current date and time format in 12 hours.
 ```
 
 ### Methods
@@ -51,12 +51,14 @@ This method returns a string replaced by a requested values.
 var d = new dateM();
 
 // dd - date, mm - month, yyyy - year.
+// You can also get month and day as string value by passing day or month.
 // Note: time representing characters must be separated by colon(:).
 // hh:mm:ss - OK
 // hh mm ss - Warning: You may don't get what you expect.
 
 // Example:
-d.current("dd-mm-yyyy hh:mm:ss") // Prints current date and time.
+d.current('dd-mm-yyyy hh:mm:ss'); // Prints current date and time.
+d.current('day, month yyyy') // Prints day & month strings, and year.
 ```
 
 #### dateM().unixTime()
@@ -69,13 +71,13 @@ Using this method you can get difference between two dates in days.
 
 _Note: Arguments should be dateM objects._
 
-*Example:*
+_Example:_
 
 ```js
 var b = new dateM(2020, 0, 1);
 var e = new dateM(2021, 0, 1);
 
-console.log(dateM.timePassed(b, e)); // Prints 366 
+console.log(dateM.timePassed(b, e)); // Prints 366
 ```
 
 ## 🏗️ To-do list
@@ -88,7 +90,7 @@ console.log(dateM.timePassed(b, e)); // Prints 366
 - [ ] Adding some options for timePassed method.
 - [ ] Adding some more features.
 
-Ofcourse, there's a lot to-do. 
+Ofcourse, there's a lot to-do.
 
 ## 🤝 Contributing
 
@@ -104,7 +106,7 @@ Here are instructions for contributing.
 
 **Working on your first Pull Request?**
 
- You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://kcd.im/pull-request)
+You can learn how from this _free_ series [How to Contribute to an Open Source Project on GitHub](https://kcd.im/pull-request)
 
 ## ⚖️ License
 

@@ -1,4 +1,4 @@
-// A-I-M-U/date-manipulator v0.1.1 license: MIT
+// A-I-M-U/date-manipulator v1.0.1 license: MIT
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
@@ -93,7 +93,7 @@
     throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
   }
 
-  var matchDate = /(dd)|(mm)|(yyyy)|(hh|:mm|ss)/gi;
+  var matchDate = /(dd)|(mm)|(yyyy)|(hh|:mm|ss)|(day)|(month)/gi;
   var matchTime = /(hh)|(mm)|(ss)/gi;
 
   function getTime(str, format, date) {
@@ -134,6 +134,11 @@
     return (end.unixTime() - begin.unixTime()) / 1000 / 60 / 60 / 24;
   }
 
+  var data = {
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  };
+
   function current(arg) {
     var _this = this,
         _getTime2;
@@ -164,6 +169,14 @@
 
       if (m == 'yyyy') {
         return _this.date.getFullYear();
+      }
+
+      if (m == 'day') {
+        return data.days[_this.date.getDay()];
+      }
+
+      if (m == 'month') {
+        return data.months[_this.date.getMonth()];
       }
     });
     arg = date + ((_getTime2 = getTime(arg, this.hFormat, this.date)) !== null && _getTime2 !== void 0 ? _getTime2 : '');
