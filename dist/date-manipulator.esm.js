@@ -1,4 +1,4 @@
-// A-I-M-U/date-manipulator v1.0.1 license: MIT
+// A-I-M-U/date-manipulator v1.1.0 license: MIT
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
