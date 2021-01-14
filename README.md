@@ -58,7 +58,7 @@ var d = new dateM();
 
 // Example:
 d.current('dd-mm-yyyy hh:mm:ss'); // Prints current date and time.
-d.current('day, month yyyy') // Prints day & month strings, and year.
+d.current('day, month yyyy'); // Prints day & month strings, and year.
 ```
 
 #### dateM().unixTime()

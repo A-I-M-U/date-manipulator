@@ -31,9 +31,12 @@ var d3 = new dateM(2021, 4, 11, {
 });
 test('11/5/2021 12:0:0 AM', d3.current('dd/mm/yyyy hh:mm:ss'));
 
-var d4 = new dateM(2001, 6, 27);
-test('July 27, 2001', d4.current('month dd, yyyy'));
-test('Friday, July 27, 2001', d4.current('day, month dd, yyyy'));
+var d4 = new dateM(1970, 0, 1);
+test('January 1, 1970', d4.current('month dd, yyyy'));
+test('Thursday, January 1, 1970', d4.current('day, month dd, yyyy'));
+
+const d5 = new dateM('January 1, 1970');
+test('1.1.1970', d5.current('dd.mm.yyyy'));
 
 // ./src/lib/methods/getUTC.js
 test(new Date().getTime(), new dateM().unixTime());
