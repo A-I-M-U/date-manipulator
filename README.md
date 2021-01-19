@@ -63,7 +63,7 @@ d.current('day, month yyyy'); // Prints day & month strings, and year.
 
 #### dateM().unixTime()
 
-This method returns unix time in seconds.
+This method returns unix time in miliseconds.
 
 #### dateM.timePassed()
 
