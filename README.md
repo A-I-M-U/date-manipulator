@@ -7,7 +7,7 @@
 
 This is a simple date and time manipulator. Using this package you can get some helpful features like finding difference between dates, and getting current date and time by passing a string. More features are being developed by our team.
 
-## 📦 Installation
+## Installation
 
 ### Install this package via npm:
 
@@ -24,7 +24,7 @@ This package is also available on unpkg, so you can load it via script tag:
 </script>
 ```
 
-## 🔨 Usage
+## Usage
 
 ### Input
 
@@ -80,7 +80,7 @@ var e = new dateM(2021, 0, 1);
 console.log(dateM.timePassed(b, e)); // Prints 366
 ```
 
-## 🏗️ To-do list
+## To-do list
 
 - [ ] Adding timezone option.
 - [ ] Validation of arguments.
@@ -92,7 +92,7 @@ console.log(dateM.timePassed(b, e)); // Prints 366
 
 Ofcourse, there's a lot to-do.
 
-## 🤝 Contributing
+## Contributing
 
 Thank you for considering contributing to our project.
 
@@ -108,6 +108,6 @@ Here are instructions for contributing.
 
 You can learn how from this _free_ series [How to Contribute to an Open Source Project on GitHub](https://kcd.im/pull-request)
 
-## ⚖️ License
+## License
 
 [MIT](./LICENSE.md)
