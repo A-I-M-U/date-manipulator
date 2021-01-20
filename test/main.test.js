@@ -6,7 +6,7 @@ function test(expected, actual) {
   console.log('\033[34m✓', actual);
 }
 
-// ./src/lib/utils/timePassed.js
+// ./src/lib/helper_functions/index.js
 test('366', dateM.timePassed(new dateM(2020, 0, 1), new dateM(2021, 0, 1)));
 test('1', dateM.timePassed(new dateM(2021, 0, 1), new dateM(2021, 0, 2)));
 test('365', dateM.timePassed(new dateM(2021, 0, 1), new dateM(2022, 0, 1)));

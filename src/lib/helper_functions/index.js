@@ -1,0 +1,1 @@
+export { timePassed } from './timePassed.js';

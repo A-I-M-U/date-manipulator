@@ -1,5 +1,5 @@
 import { dateM } from './dateM.js';
-import { timePassed } from './lib/utils/index.js';
+import { timePassed } from './lib/helper_functions/index.js';
 
 const date_m = function () {
   let args = [...arguments];
