@@ -46,4 +46,4 @@ var d6 = new dateM(0);
 
 test(1970, d6.year());
 test("January", d6.month());
-test("05", d6.hour());
+test("00", d6.hour());
