@@ -42,8 +42,8 @@ test('1.1.1970', d5.current('dd.mm.yyyy'));
 test(new Date().getTime(), new dateM().unixTime());
 
 // ./src/lib/methods/api/index.js
-var d6 = new dateM(1611380075012);
+var d6 = new dateM(0);
 
-test(2021, d6.year());
+test(1970, d6.year());
 test("January", d6.month());
-test(11, d6.hour());
+test("05", d6.hour());
