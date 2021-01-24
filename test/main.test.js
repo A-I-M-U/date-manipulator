@@ -2,7 +2,7 @@ var dateM = require('..');
 var assert = require('assert');
 
 function test(expected, actual) {
-  assert.deepStrictEqual(expected, actual);
+  assert.deepStrictEqual(actual, expected);
   console.log('\033[34m✓', actual);
 }
 
@@ -43,7 +43,8 @@ test(new Date().getTime(), new dateM().unixTime());
 
 // ./src/lib/methods/api/index.js
 var d6 = new dateM(0);
-
+var h = new Date(0).getHours();
+h = h<10? "0" + String(h): String(h);
 test(1970, d6.year());
 test("January", d6.month());
-test("00", d6.hour());
+test(h, d6.hour());
