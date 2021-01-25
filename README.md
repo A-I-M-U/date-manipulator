@@ -80,18 +80,6 @@ var e = new dateM(2021, 0, 1);
 console.log(dateM.timePassed(b, e)); // Prints 366
 ```
 
-## To-do list
-
-- [ ] Adding timezone option.
-- [ ] Validation of arguments.
-- [ ] Error handling.
-- [x] String values for day and month.
-- [ ] Creating a meaningful and helpful documentation.
-- [ ] Adding some options for timePassed method.
-- [ ] Adding some more features.
-
-Ofcourse, there's a lot to-do.
-
 ## Contributing
 
 Thank you for considering contributing to our project.
